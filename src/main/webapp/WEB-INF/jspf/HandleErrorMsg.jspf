@@ -1,0 +1,10 @@
+<%
+    // gibt eine eventuell empfangene Fehlernachricht aus
+    {
+        String errorMsg = request.getParameter("errorMsg");
+        if (errorMsg != null) {
+            out.println(errorMsg);
+        }
+    }
+%>
+

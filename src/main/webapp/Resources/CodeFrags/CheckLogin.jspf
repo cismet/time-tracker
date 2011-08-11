@@ -1,0 +1,7 @@
+<%
+	if (session.getAttribute("username") == null){
+		response.sendRedirect("Login.jsp");
+		session.setAttribute("lastPage", currentPage);
+		return;
+	}
+%>
