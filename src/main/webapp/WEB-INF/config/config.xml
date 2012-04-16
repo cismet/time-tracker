@@ -17,7 +17,7 @@
     <dbSettings>
       <user>postgres</user>
       <pwd>testtest</pwd>
-      <path>jdbc:postgresql://localhost/timetracker</path>
+      <path>jdbc:postgresql://flexo.cismet.de/timetracker</path>
       <driver>org.postgresql.Driver</driver>
       
       <!--user>postgres</user>

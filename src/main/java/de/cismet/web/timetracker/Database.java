@@ -28,7 +28,7 @@ public class Database implements DatabaseInterface {
         this.stmt = null;
         this.errorMessage = null;
 
-        try{
+        try {
             Config config = new Config(applicationPath + "WEB-INF/config/config.xml");
             //prueft, ob Datenbanktreiber vorhanden
             Class.forName(config.getDbDriver());
@@ -36,7 +36,7 @@ public class Database implements DatabaseInterface {
             conn = DriverManager.getConnection(config.getDbPath(), config.getDbUser(), config.getDbPwd());                   
             stmt = conn.createStatement();
             createPreparedStatements();
-        }catch(Exception e){
+        } catch(Exception e){
             e.printStackTrace();
             conn = null;
             stmt = null;
@@ -67,10 +67,10 @@ public class Database implements DatabaseInterface {
     
     
     private void createPreparedStatements() throws Exception {
-        psTimeOfWork = conn.prepareStatement(   "SELECT action, ts.project_id, title, duration_in_hours, time " +
+        psTimeOfWork = conn.prepareStatement( "SELECT action, ts.project_id, title, duration_in_hours, time " +
                                                 "FROM tt_timesheet ts LEFT OUTER JOIN tt_projects p ON (ts.project_id = p.id) " +
                                                 "WHERE ts.u_id = ? AND date_trunc('day', time) >= date_trunc('day', timestamp ?) AND " +
-                                                "date_trunc('day', time) <= date_trunc('day', timestamp ?) ORDER BY time");
+                                                "date_trunc('day', time) <= date_trunc('day', timestamp ?) ORDER BY time" );
     }
     
 
@@ -85,7 +85,7 @@ public class Database implements DatabaseInterface {
         psTimeOfWork.setInt(1, uId);
         psTimeOfWork.setTimestamp(2, startTime);
         psTimeOfWork.setTimestamp(3, endTime);
-        
+
         ResultSet rSet = psTimeOfWork.executeQuery();
         
         if (rSet != null) {
@@ -757,6 +757,22 @@ public class Database implements DatabaseInterface {
                     conn.close();
             }
         } catch (SQLException e) {}
+    }
+
+    public int getIdByName(String firstName, String lastName) throws SQLException {
+        int id = -1;
+            
+        ResultSet rSet = execute("SELECT id FROM tt_user where name ilike '" + firstName + " " + lastName + '\'' + " limit 1");
+
+        if (rSet != null) {
+            if ( rSet.next() ){
+                id = rSet.getInt(1);
+            }
+            
+            rSet.close();
+        }
+        
+        return id;
     }
         
 }

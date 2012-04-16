@@ -88,6 +88,8 @@ public interface DatabaseInterface {
      */
     int getIdByBuddyName(String buddy) throws SQLException;
 
+    int getIdByName(String firstName, String lastName) throws SQLException;
+
     ResultSet getIllnessForYear(int uId, GregorianCalendar toTime) throws SQLException;
 
     /**

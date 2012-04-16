@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>de.cismet.web</groupId>
   <artifactId>timetracker-web-app</artifactId>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>TimetrackerWebApp JEE5 Webapp</name>
   <url>http://maven.apache.org</url>

@@ -301,4 +301,8 @@ public class DatabaseCache implements DatabaseInterface {
     public void close() {
         db.close();
     }
+
+    public int getIdByName(String firstName, String lastName) throws SQLException {
+        return db.getIdByName(firstName, lastName);
+    }
 }
