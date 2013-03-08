@@ -1,0 +1,147 @@
+    BODY {
+        height:100%;
+        background-color:#1c449c;
+        text-align: center;
+        font-family: Arial, Helvetica, Sans-Serif;
+        font-size: 12px;
+}
+
+    table {
+        font-family: Arial, Helvetica, Sans-Serif;
+        font-size: 15px;
+        background-color: #FFFFFF;
+    }
+
+    .MainTable {
+        height: 80%;
+        width:1000px;
+        text-align: center;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    button {
+        font-family: Arial, Helvetica, Sans-Serif;
+        font-size: 15px;
+        margin-right: 2px;
+        margin-left: 2px;
+        margin-bottom: 2px;
+        margin-top: 2px;
+    }
+
+    select, input {
+        font-family: Arial, Helvetica, Sans-Serif;
+        font-size: 15px;
+        width: 200px;
+        margin-right: 2px;
+        margin-left: 2px;
+        margin-bottom: 2px;
+        margin-top: 2px;
+    }
+
+    .Menubar {
+        background-color: #FBAB4B;
+        height: 33px;
+    }
+
+    .Footer {
+        height: 20px;
+        width: 100%;
+    }
+
+    .Header {
+        height: 45px;
+        width: 100%;
+        text-align: center;
+        color:#1c449c; 
+    }
+
+    .HeaderText, .HeaderTextLogin {
+        padding-right: 10px;
+        text-align: center;
+        font-size: 30px;
+        color:#1c449c;
+        font-weight: bold;
+    }
+
+    .HeaderTextLogin {
+        text-align: right;
+    }
+
+    .Logout {
+        color:#1c449c;
+        cursor: pointer;
+        margin-right: 10px;
+        text-align: right;
+    }
+
+    .MainDiv {
+        text-align: center;
+        vertical-align: middle;
+    }
+
+
+    .CenterTable {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15%;
+        margin-bottom: auto;
+    }
+
+    hr {
+        color: #1c449c;
+        border-right-width: 3px;
+        border-left-width: 3px;
+        border-bottom-width: 3px;
+        border-top-width: 3px;
+        border-right-color: #1c449c;
+        border-left-color: #1c449c;
+        border-bottom-color: #1c449c;
+        border-top-color: #1c449c;
+        border-right-style: solid;
+        border-left-style: solid;
+        border-bottom-style: solid;
+        border-top-style: solid;
+        margin-top:5px;
+        margin-bottom:5px;
+    }
+
+/* - UEBERSCHRIFTEN -------------------------------------------------------------------------*/
+
+
+    h1 { color:#1c449c; }
+    h2 { color:#1c449c; }
+    h3,h4 { color:#1c449c; }
+
+
+    /* Ausrichtung festlegen: */
+
+    h1 { text-align:center; }
+    h2,h3{text-align:right}
+
+
+
+ a.menu {
+  display:block;
+  color:#FFFFFF;
+  line-height:1.8em;
+  width:132px;
+  height:22px;
+  padding:0px;
+  font-size:12px;
+  font-family:Verdana, Arial, sans-serif;
+
+  text-decoration:none;
+  text-align:center;
+  margin-top:10px;
+  margin:4px;
+  border:0px solid #000;
+  background-image:url(button.png);
+  }
+
+a:hover.menu {
+  display:block;
+  background-image:url(buttonHL.png);
+  }

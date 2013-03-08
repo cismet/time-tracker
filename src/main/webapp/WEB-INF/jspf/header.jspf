@@ -1,0 +1,16 @@
+<table align="center" border="0" cellpadding="0" cellspacing="0"  id="titlebar" width="1000px" bgcolor="#31427A" cellpadding="10" cellspacing="0" border="0" summary="The GIMP">
+    <tbody>
+        <tr class="Header">
+            <td align="left"><img id="logo" src="Resources/cismetLogo.png" alt="cismetLogo" /></td>
+            <td style="text-align: center;" colspan="2"><div class="HeaderText">Timetracker</div></td>
+            <td align="right" ><div class="Logout"><a href="Logout"><%= session.getAttribute("username")%> abmelden</a></div></td>
+        </tr>
+        <tr class="Menubar">
+            <td><a class="menu" href="Timesheet.jsp?u_id=<%=session.getAttribute("id")%>">Timesheet</a></td>
+            <td><a class="menu" href="TimesheetCalendar.jsp?u_id=<%=session.getAttribute("id")%>">D&amp;D Timesheet</a></td>
+            <td><a class="menu" href="Queries.jsp?u_id=<%=session.getAttribute("id")%>">Auswertungen</a></td>
+            <td><a class="menu" href="Contracts.jsp?u_id=<%=session.getAttribute("id")%>">Vertr&auml;ge</a></td>
+        </tr>
+    </tbody>
+</table>
+<div class="MainDiv">

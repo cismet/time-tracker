@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<timesheet>
+    <view>
+        <viewName>Basis-Sicht</viewName>
+        <className>BasicView</className>
+    </view>
+    <view>
+        <viewName>Urlaub-Sicht</viewName>
+        <className>HolidayView</className>
+        <horizontalResize>true</horizontalResize>
+    </view>
+    <!--view>
+        <viewName>Admin-Sicht</viewName>
+        <className>AdminView</className>
+        <enableProjects>true</enableProjects>
+    </view-->
+    <dbSettings>
+      <user>postgres</user>
+      <pwd>testtest</pwd>
+      <path>jdbc:postgresql://flexo.cismet.de/timetracker</path>
+      <driver>org.postgresql.Driver</driver>
+      
+      <!--user>postgres</user>
+      <pwd>testtest</pwd>
+      <path>jdbc:postgresql://localhost/timetracker</path>
+      <driver>org.postgresql.Driver</driver-->
+    </dbSettings>
+</timesheet>
+

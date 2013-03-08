@@ -1,0 +1,10 @@
+<table class="login-info" border="0" cellpadding="0" cellspacing="0" summary="" width="100%">
+        <tr>
+                <td>
+                        <div align="left"><h4>angemeldet als <%= session.getAttribute("username")%></h4></div>
+                </td>
+                <td>
+                        <div align="right"><h4><a href="Logout">abmelden</a></h4></div>
+                </td>
+        </tr>
+</table>
