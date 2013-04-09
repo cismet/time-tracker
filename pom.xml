@@ -16,6 +16,13 @@
     
     <name>Timetracker WebApp Library</name>
     <description>!!! DESCRIPTION PENDING !!!</description>
+    <licenses>
+        <license>
+            <name>GNU Lesser General Public License</name>
+            <distribution>repo</distribution>
+            <url>http://www.gnu.org/licenses/lgpl-3.0.html</url>
+        </license>
+    </licenses>
     
     <dependencies>
         <!-- these dependencies are only because of the obsolete servlet code, remove them if code is removed -->
