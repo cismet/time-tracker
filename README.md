@@ -1,4 +1,4 @@
-time-tracker
+time-tracker [![Build Status](http://ci.cismet.de/buildStatus/icon?job=time-tracker)](https://ci.cismet.de/job/time-tracker/)
 ============
 
 License
